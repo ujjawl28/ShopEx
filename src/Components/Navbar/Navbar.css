@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(164, 159, 159);
+    height: 75px;
+}
+
+.hidden{
+    display:none;
+}
+
+.block{
+    font-size: 14px;
+    display: inline;
+}
+
+.Navbar > img{
+    object-fit: cover;
+    width: 300px;
+}
+
+.cartIcon{
+ 
+    font-size: 21px;
+}
+
+@media screen and (max-width : 600px) {
+
+    .Navbar > img{
+    width: 200px;
+}
+}

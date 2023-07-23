@@ -1,0 +1,125 @@
+.itemImage{
+    width: 250px;
+     }
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    border: 1px solid rgb(164, 159, 159);
+    padding: 8px;
+   border-radius: 5px;
+    text-align: center;
+}
+
+.cardDetails{
+    display: flex;
+     justify-content: center;
+     gap: 5px;
+    align-items: center;
+    width: 250px;
+}
+
+.rightSection{
+    display: grid;
+    grid-template-columns: auto auto auto;  
+    flex: 1;
+    place-content: space-evenly;
+    grid-row-gap: 30px;
+    
+}
+
+.loadingClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 85vh;
+}
+.btn{
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    outline: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.pagination{
+    /* display: block !important; */
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.paginationButton{
+    padding: 7px;
+    font-size: 21px;
+    background-color: white;
+    outline: none;
+    margin: 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1300px) {
+    .card{
+      width: 250px;
+    }
+
+    .itemImage{
+        width: 220px;
+         }
+}
+
+@media screen and (max-width : 1000px) {
+   
+.rightSection{
+    grid-template-columns: auto auto;      
+}
+}
+
+@media screen and (max-width : 1000px) {
+    .card{
+        width: 200px;
+      }
+  
+      .itemImage{
+          width: 180px;
+           }  
+           
+     .cardDetails{
+            display: flex;
+            flex-direction: column;
+             justify-content: center;
+             gap: 5px;
+            align-items: center;
+            width:fit-content;
+        }
+       
+    }
+
+@media screen and (max-width : 600px){
+    .rightSection{
+        grid-template-columns: auto;      
+    }
+}
+@media screen and (max-width : 400px){
+    .card{
+        width: 160px;
+        padding: 3px;
+      }
+
+      .itemImage{
+        width: 140px;
+         }  
+}
